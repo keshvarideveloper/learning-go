@@ -1,7 +1,22 @@
 # go build
 
 Most of the time you want to build a binary for later use. That’s where you use the go
-build command. On the next line in your terminal, type:
+build command.
+
+Create a directory called learning_go_ch1, open up a text editor, enter the
+following text, and save it inside learning_go_ch1 to a file named hello.go
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, world!")
+}
+```
+
+After the file is saved, open up a terminal or command prompt and type:
 
     $ go build hello.go
 
