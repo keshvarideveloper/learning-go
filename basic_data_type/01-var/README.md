@@ -94,3 +94,5 @@ side of the ```:=```**, then any of the **other variables can already exist**:
 
 * There is one **limitation on ```:=```**. If you are declaring a variable at package level, you
  must use var because **```:=``` is not legal outside of functions.**
+
+* Avoid declaring variables outside of functions because they complicate data flow analysis.
