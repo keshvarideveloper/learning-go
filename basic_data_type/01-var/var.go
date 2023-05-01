@@ -22,7 +22,6 @@ func main() {
 
 	// := allows you to assign values to existing variables, too. As long as there is one new variable on the lefthand side of the :=
 	t, s := false, "Hello"
-
 	fmt.Printf("new value of t is: %v , value of new variable 's' is: %v ", t, s)
 
 }
