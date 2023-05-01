@@ -16,7 +16,7 @@ func main() {
 	fmt.Printf("x: %v, y: %v, z: %v, d: %v, e: %v, f: %v, g: %v\n",
 		x, y, z, d, e, f, g)
 
-	// 	Short declaration with :=
+	// short declaration with :=
 	t := true
 	fmt.Println("t: ", t)
 
