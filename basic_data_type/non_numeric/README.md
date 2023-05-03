@@ -169,7 +169,7 @@ func main() {
 ```
 
 ### Tip:
-If you have a string variable contains Unicode, you must use utf8.RuneCountInString() instead of len() to get length of variable.
+1) If you have a string variable contains Unicode, you must use utf8.RuneCountInString() instead of len() to get length of variable.
 
 ```go
 func main() {
@@ -181,6 +181,20 @@ func main() {
 // Result
 // get len of s with len(): 8
 // get len of s with utf8.RuneCountInString(): 6
+```
+
+2) Golang strings are **immutable**, which means that they cannot be changed once they have been initialized. Changing these strings after initialization will cause the program to throw an error.
+
+```go
+func main(){
+    var s string = "Hello, World"
+    s[1] = 'c'
+
+    fmt.Printf("%s", s)
+}
+// Result
+// cannot assign to s[1]
+
 ```
 
 ## Dates and Times
